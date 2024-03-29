@@ -4,6 +4,8 @@ import pyautogui
 
 
 def move_mouse_and_refresh():
+    print ("Starting the program and refreshing")
+    pyautogui.click(x=118, y=73)
     while True:
         # Move the mouse slightly
         pyautogui.move(0, 1)
@@ -13,8 +15,7 @@ def move_mouse_and_refresh():
 
         # Every 10 minutes, click at the refresh button coordinates (example coordinates given)
         if time.time() % 600 < 60:
-            # Please replace (x, y) with the actual coordinates of your refresh button
-            pyautogui.click(x=100, y=100)
+            pyautogui.click(x=118, y=73)
             print("Browser refreshed.")
 
 
